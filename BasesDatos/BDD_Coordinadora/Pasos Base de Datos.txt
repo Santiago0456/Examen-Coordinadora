@@ -1,0 +1,13 @@
+1. Debemos descargar un gestor, en mi caso yo utilicé MySQL WorkBench
+2. Deberemos tener también un root con una contraseña para poder conectar nuestro MySQL y crear nuestras bases de datos
+3. Algunas veces presenta errores en la conexión, por tanto hay que irse a:
+	3.1 Administrador de tareas
+	3.2 Servicios
+	3.3 MySQL/click derecho/iniciar
+4. Cuando tengamos conexión en nuestro MySQL le damos en la pestaña "File"/"New Query Tab" y ya tendremos una pestaña donde podremos
+   empezar a programar nuestra DB.
+5.Para crear, la sentencia es CREATE DATABASE NombrequequeramoslaDB; NOTA: es recomendable antes de crear esta DB por primera vez
+  hacer un drop con el mismo nombre que vamos a crear para evitar errores: DROP DATABASE IF EXIST NombrequequeramoslaDB; (el if nos sirve
+  Para no borrar algo si no existe, solamente si hay en existencia una con el mismo nombre).
+6. Posterior a esto usaremos la DB creada con la línea de código USE NombrequequeramoslaDB;
+7. Para eliminarla, como se especificó en el paso 5., lo que haremos es un DROP, mediante la línea DROP DATABASE NombrequequeramoslaDB
